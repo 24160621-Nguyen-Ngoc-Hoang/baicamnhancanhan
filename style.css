@@ -1,0 +1,45 @@
+:root{--ink:#20332b;--muted:#68766d;--cream:#f5f2e9;--paper:#fffdf7;--sage:#dce5d8;--green:#365b49;--gold:#c59a55;--line:#e7e3d8}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:"DM Sans",sans-serif;line-height:1.75}
+    a{color:inherit;text-decoration:none}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+    .nav{position:sticky;top:0;z-index:10;background:rgba(245,242,233,.92);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
+    .navin{height:68px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-weight:700;letter-spacing:.08em;font-size:.78rem}.brand span{color:var(--gold)}
+    .links{display:flex;gap:22px;font-size:.82rem;color:var(--muted)}.links a:hover{color:var(--green)}
+    .hero{min-height:620px;display:grid;grid-template-columns:1.05fr .95fr;align-items:center;gap:42px;padding:72px 0 82px}
+    .eyebrow{color:var(--green);font-size:.75rem;font-weight:700;letter-spacing:.19em;text-transform:uppercase}
+    h1,h2,h3,.quote{font-family:"Playfair Display",serif;font-weight:600}
+    h1{font-size:clamp(3.3rem,7vw,6.5rem);line-height:1.02;letter-spacing:-.045em;margin:20px 0 24px}
+    h1 em{font-weight:500;color:var(--green)}.hero p{font-size:1.08rem;color:var(--muted);max-width:570px}
+    .byline{margin-top:30px;display:flex;align-items:center;gap:13px;font-size:.9rem}.avatar{width:42px;height:42px;border-radius:50%;display:grid;place-items:center;background:var(--sage);color:var(--green);font-weight:700}
+    .cover{position:relative;min-height:450px;border-radius:48% 48% 18px 18px;background:linear-gradient(160deg,#d9e2d3,#a8bea8 55%,#68866f);overflow:hidden;box-shadow:0 28px 70px #263d2b20}
+    .sun{position:absolute;width:170px;height:170px;border-radius:50%;background:#f5dfad;top:62px;right:62px;opacity:.9}
+    .hill{position:absolute;bottom:-50px;width:120%;height:230px;border-radius:50% 50% 0 0;background:#55765d;left:-10%;transform:rotate(-8deg)}
+    .hill.two{height:180px;background:#365b49;left:-15%;bottom:-82px;transform:rotate(8deg)}
+    .path{position:absolute;bottom:-25px;left:45%;width:100px;height:240px;background:#e9d7b4;clip-path:polygon(40% 0,60% 0,100% 100%,0 100%);opacity:.85}
+    .tree{position:absolute;bottom:125px;left:16%;font-size:5rem;filter:drop-shadow(0 8px 5px #243b2c30)}
+    .covernote{position:absolute;top:28px;left:28px;color:#294533;font-family:"Playfair Display",serif;font-size:1.15rem;max-width:180px}
+    .covernote small{display:block;font:600 .62rem "DM Sans";letter-spacing:.18em;margin-top:10px}
+    .section{padding:86px 0}.section.white{background:var(--paper)}.sectionhead{max-width:690px;margin-bottom:38px}
+    .kicker{color:var(--gold);font-size:.72rem;font-weight:700;letter-spacing:.18em;text-transform:uppercase}
+    h2{font-size:clamp(2.2rem,4vw,3.5rem);line-height:1.12;margin:10px 0 16px;letter-spacing:-.025em}
+    .lead{font-size:1.08rem;color:var(--muted)}.prose{max-width:790px}.prose p{margin:0 0 19px;color:#46564c}
+    .bookgrid{display:grid;grid-template-columns:.75fr 1.25fr;gap:54px;align-items:start}
+    .bookmeta{padding:28px;background:var(--sage);border-radius:18px;position:sticky;top:92px}
+    .bookmeta .label{font-size:.68rem;text-transform:uppercase;letter-spacing:.16em;color:var(--muted);margin-top:17px}.bookmeta strong{display:block;font-size:1.02rem}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+    .card{padding:26px;background:var(--paper);border:1px solid var(--line);border-radius:16px;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 15px 35px #243b2c12}
+    .num{width:34px;height:34px;border-radius:50%;display:grid;place-items:center;background:var(--sage);color:var(--green);font-weight:700;font-size:.8rem}
+    h3{font-size:1.45rem;line-height:1.25;margin:17px 0 10px}.card p{color:var(--muted);font-size:.93rem;margin:0}
+    .quotegrid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .quote-card{padding:27px;border-radius:16px;background:#f1efe6;border:1px solid var(--line)}
+    .quote{font-size:1.35rem;line-height:1.4}.quote-card p{font-size:.9rem;color:var(--muted);margin:14px 0 0}
+    .featurequote{background:var(--green);color:#fff;padding:54px;border-radius:22px;margin:48px 0 0;position:relative;overflow:hidden}
+    .featurequote:after{content:"“";position:absolute;right:25px;top:-80px;font:18rem "Playfair Display";color:#ffffff12}
+    .featurequote .quote{font-size:clamp(1.6rem,3vw,2.6rem);max-width:800px;position:relative;z-index:1}.featurequote p{color:#d6e2d8;position:relative;z-index:1}
+    .reflection{display:grid;grid-template-columns:1fr 1fr;gap:42px;align-items:center}
+    .note{padding:32px;background:var(--sage);border-radius:18px}.note strong{font-family:"Playfair Display";font-size:1.35rem}
+    .steps{border-left:1px solid #c8d2c7;padding-left:25px}.step{position:relative;margin:0 0 24px}.step:before{content:"";position:absolute;width:9px;height:9px;border-radius:50%;background:var(--gold);left:-30px;top:9px}.step h3{font-size:1.2rem;margin:0 0 5px}.step p{margin:0;color:var(--muted);font-size:.94rem}
+    .closing{background:#e8e8dc;text-align:center;padding:90px 22px}.closing h2{max-width:760px;margin:12px auto 18px}.closing p{max-width:640px;margin:auto;color:var(--muted)}
+    footer{padding:26px 0;color:var(--muted);font-size:.8rem}.footerin{display:flex;justify-content:space-between;gap:20px}
+    .top{position:fixed;bottom:22px;right:22px;width:42px;height:42px;border:0;border-radius:50%;background:var(--green);color:white;font-size:1.1rem;cursor:pointer;box-shadow:0 6px 20px #0002}
+    @media(max-width:800px){.links{display:none}.hero{grid-template-columns:1fr;padding:58px 0}.cover{min-height:350px;order:-1}.bookgrid,.reflection{grid-template-columns:1fr}.bookmeta{position:static}.cards{grid-template-columns:1fr}.quotegrid{grid-template-columns:1fr}.section{padding:65px 0}.featurequote{padding:34px 27px}}
+    @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
